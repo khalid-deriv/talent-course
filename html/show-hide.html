@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container { display: flex;
+    flex-direction: column; align-items: center; justify-content: center;
+    }
+    .buttons-container {
+    flex-direction: row;
+    }
+    button {
+    background-color: yellow;
+    margin: 10px;
+    height: 30px;
+    width: 100px;
+    }
+    </style>
+   
+<div class="container">
+    <h1>jQuery مرحبًا ، هذا</h1>
+    <div class="buttons-container">
+      <button id="show">
+        اظهر النص
+      </button>
+      <button id="hide">
+        اخفي النص
+      </button>
+    </div>
+  </div>
+  <script>
+    // import $ from "https://cdn.skypack.dev/jquery@3.6.0";
+    
+    $("#hide").on("click", function () {
+    $("h1").hide();
+    });
+    $("#show").on("click", function () { $("h1").show();
+    });
+    </script>
+</body>
+</html>
+
+
+
